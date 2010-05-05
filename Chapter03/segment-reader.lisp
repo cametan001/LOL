@@ -1,0 +1,11 @@
+(in-package #:com.blogspot.beta-reduction.read-macros)
+
+(defun segment-reader (stream ch n &optional (acc nil))
+  (labels ((iter (chars curr)
+	     (if (char= ch curr)
+		 (coerce (reverse chars) 'string)
+		 (iter (cons curr chars) (read-char stream)))))
+    (if (< n 1)
+	(reverse acc)
+	(segment-reader stream ch (1- n)
+			(cons (iter nil (read-char stream)) acc)))))
