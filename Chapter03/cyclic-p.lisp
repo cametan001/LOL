@@ -2,8 +2,8 @@
 
 (defun cyclic-p (l)
   (cyclic-p-aux l (make-hash-table)))
-  
-  (defun cyclic-p-aux (l seen)
+
+(defun cyclic-p-aux (l seen)
   (if (consp l)
       (or (gethash l seen)
 	  (progn

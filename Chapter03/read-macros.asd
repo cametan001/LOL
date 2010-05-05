@@ -15,7 +15,7 @@
    (:file "sharp-greater-than" :depends-on ("packages"))
    (:file "segment-reader" :depends-on ("packages"))
    (:file "match-modes" :depends-on ("packages"))
-   (:file "cl-ppcre-reader" :depends-on ("packages" "segment-reader"))
+   (:file "cl-ppcre-reader" :depends-on ("packages" "segment-reader" "match-modes"))
    (:file "cyclic-p" :depends-on ("packages"))
    (:file "safe-read-from-string" :depends-on ("packages")))
   :depends-on (:cl-ppcre :macro-basics))
