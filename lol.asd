@@ -13,5 +13,6 @@
      :introduction
      :macro-basics
      :read-macros
+     :programs-that-program
      ))
 
