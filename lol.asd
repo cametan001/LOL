@@ -8,11 +8,14 @@
     :maintainer ""
     :licence ""
     :description ""
+    :components
+    ((:file "macroexpand-all"))
     :depends-on 
-    (:closures
-     :introduction
+    (:introduction
+     :closures
      :macro-basics
      :read-macros
      :programs-that-program
+     :anaphoric-macros
      ))
 
