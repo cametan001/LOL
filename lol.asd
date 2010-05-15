@@ -17,5 +17,6 @@
      :read-macros
      :programs-that-program
      :anaphoric-macros
+     :lisp-moving-forth-moving-lisp
      ))
 

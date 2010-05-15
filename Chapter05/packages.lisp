@@ -3,9 +3,13 @@
 (defpackage :com.blogspot.beta-reduction.anaphoric-macros
   (:use :common-lisp :com.blogspot.beta-reduction.introduction :com.blogspot.beta-reduction.macro-basics :com.blogspot.beta-reduction.programs-that-program)
   (:export :alambda
+           :self
            :aif
+           :it
            :alet
+           :this
            :alet-fsm
+           :|#`-reader|
            :ichain-before
            :ichain-after
            :ichain-intercept
